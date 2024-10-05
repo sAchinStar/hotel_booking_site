@@ -1,0 +1,284 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+
+
+body {
+  
+/* background-image: url('D:\HOTEL\header\public\images\chair.jpg'); */
+background-size: cover;
+background-repeat: no-repeat;
+background-position: fixed;
+}
+
+.active{
+  color: peru;
+}
+
+.App {
+  /* background-image: url('/public/images/IMG-20241004-WA0015.jpg'); */
+  background-image: url('/public/images/header.jpg');
+  /* background: linear-gradient(to right, #dbc8c8, #0057bb); Background gradient */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Logo Styles */
+.logo {
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.logo-img {
+  width: 100px; /* Set a base width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 70px;
+  /* padding:5rem; */
+  /* padding:50px; */
+  margin-left: 200px;
+  
+
+
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+  .logo-img {
+    margin-left: 5px;
+    width: 80px; /* Smaller logo for tablet screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 60px; /* Smaller logo for mobile screens */
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem; */
+  background-color: rgb(118, 118, 116,0);
+  color: #fff;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  position: relative; /* Set relative positioning for dropdown */
+}
+
+.nav-links li:hover {
+  color: rgb(237, 158, 46);
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: peru;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  /* background-image: url('D:\HOTEL\header\public\images\chair.jpg');  */
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 2rem;
+}
+
+/* Booking Section */
+.booking-section {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Inputs */
+.booking-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.booking-input img {
+  width: 40px; /* Adjust size */
+}
+
+/* Button Styles */
+.check-btn,
+.book-now-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-right: 20px; */
+}
+
+
+
+.book-now-btn{
+  margin-right: 200px;
+}
+
+.book-now-btn:hover{
+  /* margin-right: 200px; */
+  /* margin-b: 200px; */
+  background-color: peru;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-now-btn{
+    position: relative;
+    left: 100px;
+
+  }
+
+  .nav-links {
+    /* position: relative; */
+    /* left: 56px; */
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .booking-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .nav-links {
+    display: flex;
+    /* position: relative; */
+    /* left: 56px; */
+    flex-direction: column;
+    align-items:center;
+    /* position: relative; */
+    /* right: 100px; */
+    gap: 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .booking-input img {
+    width: 30px; /* Smaller icons */
+  }
+  .CheckIn_CheckOut_Container {
+    display: flex;
+    background-color: #007bff;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 280px;
+  }
+}
+/* .CheckIn_CheckOut_Container{
+  background-color: #007bff;
+} */
+.CheckIn_CheckOut_Container {
+  display: flex;
+  background-color: #007bff;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.search-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+
+.date-picker-container label {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+

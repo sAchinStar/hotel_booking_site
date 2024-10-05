@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "descriptions":{
+        "heading": "Welcome to Circuit House! ",
+        "detail":"Step into a world of elegance and comfort at our hotel, where every detail has been carefully crafted to provide you with a seamless blend of luxury and relaxation. From the stunning architecture to the serene ambiance, we ensure that your stay is nothing short of exceptional."
+     }
+    },
+    {
+      "id": 2,
+      "descriptions": {
+        "heading": "VIP Rooms!",
+        "detail":"Immerse yourself in the ultimate luxury in our exclusive VIP suites. Designed with opulence in mind, these rooms feature spacious living areas, premium furnishings, and panoramic views that will leave you breathless. Enjoy unparalleled comfort and personalized services for a truly remarkable stay."
+      }
+    },
+    {
+      "id": 3,
+      "descriptions": {
+        "heading": "Grand Hall! ",
+        "detail":"Host unforgettable events in our grand hall, an expansive and beautifully designed space ideal for weddings, conferences, and social gatherings. Equipped with modern audiovisual technology and luxurious decor, our hall offers the perfect setting for any occasion, ensuring your event is a success."
+      }
+    },
+    {
+        "id": 4,
+        "descriptions": {
+            "heading": "Elegant Guest Rooms! ",
+            "detail":"Unwind in our elegantly appointed guest rooms, each designed to offer a peaceful retreat with contemporary comforts. Enjoy plush bedding, modern amenities, and thoughtful touches that make every stay relaxing and rejuvenating, whether you're here for business or leisure."
+        }
+      },
+      {
+        "id": 5,
+        "descriptions": {
+            "heading": "Unmatched Hospitality! ",
+            "detail":" At the heart of our hotel is a commitment to delivering exceptional service. Our attentive staff is dedicated to ensuring that every guest feels welcome, with personalized services that cater to your every need. Enjoy a luxurious stay complemented by genuine hospitality."
+        }
+      },
+      {
+        "id": 6,
+        "descriptions": {
+           "heading": "Your Perfect Escape! ",
+           "detail":" Whether you're seeking the refined elegance of our VIP suites or the cozy charm of our guest rooms, we offer a diverse selection of accommodations designed to meet the needs of every traveler. Let us be your sanctuary where comfort meets style, providing the perfect escape from the everyday" 
+        }
+      }
+  ]

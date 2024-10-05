@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    padding: 150px;
+    gap: 20px; /* Added gap between image and description */
+}
+
+.image-slider, .description-slider {
+    flex: 1; /* This will help in keeping the equal width */
+    overflow: hidden;
+    position: relative; /* For absolute positioning of children */
+}
+
+.image-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-slide.active {
+    opacity: 1;
+}
+
+.image-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-slide {
+    position: absolute; /* For positioning all descriptions in the same space */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.description-slide.active {
+    opacity: 1; /* Show the active description */
+}
+
+.description-slider .detail {
+    font-size: 22px;
+}
+
+.silde-head {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    animation: riseFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.1s; /* Delay for heading */
+}
+
+.silde-head::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(8, 8, 193);
+    transition: width 0.5s;
+}
+
+.slider-container:hover .silde-head::after {
+    width: 100%;
+}
+
+.head2 {
+    /* Animation */
+    animation: riseFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.1s; /* Delay for button */
+}
+
+.detail{
+  /* Animation */
+  animation: riseFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.1s; /* Delay for button */
+}
+
+.book-button {
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: white; /* Text color */
+    background-color: rgb(51, 81, 219); /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    text-align: center; /* Center text */
+    width: 120px;
+    align-self: safe;
+    margin-top: 20px;
+
+    /* Animation */
+    animation: riseFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.1s; /* Delay for button */
+}
+
+.book-button:hover,
+.book-button:focus {
+    background-color: rgb(4, 15, 77); /* Darker shade on hover */
+}
+
+.book-button:focus {
+    outline: none; /* Remove outline when focused */
+}
+
+.description-content.animate {
+  animation: riseFromBottom 0.8s ease-out forwards;
+}
+
+@keyframes riseFromBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column; /* Stack vertically on small screens */
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .image-slider, .description-slider {
+        width: 100%; /* Ensure full width on small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .description-slider {
+        height: 300px; /* Fixed height for description slider */
+        overflow-y: auto; /* Scrollable */
+    }
+
+    .description-slide {
+        height: 100%; /* Match the height of the description slider */
+    }
+    
+    .description-slider .detail {
+        font-size: 20px;
+    }
+
+    .book-button {
+        width: 120px; /* Full width on small screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-container {
+        flex-direction: column; /* Stack vertically on small screens */
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .image-slider, .description-slider {
+        width: 100%; /* Ensure full width on small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .description-slider {
+        height: 400px; /* Fixed height for description slider */
+        overflow-y: auto; /* Scrollable */
+    }
+
+    .description-slide {
+        height: 100%; /* Match the height of the description slider */
+    }
+
+    .description-slider .detail {
+        font-size: 17px;
+    }
+
+    .book-button {
+        width: 100px; /* Full width on small screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}

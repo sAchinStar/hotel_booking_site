@@ -1,0 +1,97 @@
+/* src/pages/aboutus.css */
+
+/* Main Section */
+.about-us {
+    padding: 40px; /* Padding around the section */
+    background: linear-gradient(to right, #dbc8c8, #0057bb); 
+    color: #000000; /* Change text color to white for better contrast */
+}
+
+/* Container for About Us */
+.about-us-container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+}
+
+/* Headings */
+.about-us h1 {
+    font-size: 2.5em; /* Main heading size */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center align */
+}
+
+.about-us h2 {
+    font-size: 2em; /* Subheading size */
+    margin-bottom: 15px; /* Space below subheading */
+}
+
+/* Paragraphs */
+.about-us p {
+    font-size: 1.1em; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 30px; /* Space below paragraphs */
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    margin-top: 20px; /* Space above photo gallery */
+}
+
+/* Photo Item */
+.photo-item {
+    margin-bottom: 40px; /* Space between photo items */
+}
+
+/* Flexbox Layout */
+.photo-wrapper {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Space between items */
+}
+
+/* Images */
+.photo-wrapper img {
+    width: 250px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add some border radius */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Description Section */
+.photo-description {
+    flex: 1; /* Allow the description to take the remaining space */
+}
+
+/* Button Styles */
+button {
+    margin-top: 10px; /* Space above button */
+    padding: 8px 15px; /* Padding inside button */
+    font-size: 1em; /* Font size for button */
+    color: #fff; /* Text color */
+    background: linear-gradient(to left, #c57c7c, #0057bb);
+     /* Button background gradient */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .photo-wrapper {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .photo-wrapper img {
+        margin-right: 0; /* Remove margin for stacked layout */
+        margin-bottom: 10px; /* Add some space below the image */
+        width: 100%; /* Full width for image on small screens */
+        max-width: 300px; /* Limit max width */
+    }
+}
